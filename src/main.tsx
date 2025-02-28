@@ -7,6 +7,7 @@ import { ThemeProvider } from './providers/ThemeProvider.tsx';
 import { AuthProvider } from './providers/AuthProvider.tsx';
 import { BrowserRouter } from 'react-router-dom';
 import { Slide, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) throw new Error('Failed to find the root element');

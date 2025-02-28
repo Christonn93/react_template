@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useNavigate, useParams } from 'react-router-dom';
-import '@/assets/styles/ErrorPage.css';
 
 const errorMessages: Record<string, { title: string; message: string }> = {
   '404': {

@@ -1,0 +1,10 @@
+:root {
+    
+
+    /* width */
+    --sm-width: 100%;
+    --md-width: 90%;
+    --lg-width: 80%;
+    --xl-width: 70%;
+    --container-width: 800px;
+}
