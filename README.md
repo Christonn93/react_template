@@ -66,42 +66,43 @@ _A brief and clear description of your project._
 
 ```
 📦 project-root
-├── 📂 public            # Static assets
-│   ├── favicon.ico      # Favicon
-│   ├── logo.png         # Logo image
-│   └── manifest.json    # Web manifest
+📦 project-root
+├── 📂 public            # Public assets served by the web server (favicon, logo, etc.)
+│   ├── favicon.ico      # Favicon displayed in the browser tab
+│   ├── logo.png         # Logo image used in the app
+│   └── manifest.json    # Web app manifest for PWA support
 ├── 📂 src
-│   ├── 📂 assets        # Images, fonts, styles
-│   ├── 📂 components    # Reusable UI components
-│   ├── 📂 config        # Business logic (auth, dashboard, etc.)
-│   ├── 📂 context       # Context providers (auth, dashboard, etc.)
-│   ├── 📂 features      # Business logic (auth, dashboard, etc.)
-│   ├── 📂 hooks         # Custom React hooks
-│   │   ├── 📂 handlers  # Unit-testing (vitest)
-│   │   ├── 📂 helpers   # Unit-testing (vitest)
-│   │   ├── 📂 query     # Unit-testing (vitest)
-│   │   ├── 📂 store     # Unit-testing (vitest)
-│   │   └── 📂 utils     # End-to-end tests (Cypress, Playwright)
-│   ├── 📂 layouts       # Page layouts
-│   ├── 📂 pages         # Full-page components
-│   ├── 📂 providers     # Context providers
-│   ├── 📂 routes        # React Router setup
-│   ├── 📂 services      # API calls (Axios, fetch)
-│   ├── 📂 utils         # Helper functions
-│   │   └── 📂 Logger    # End-to-end tests (Cypress, Playwright)
-│   ├── App.tsx          # Main application file
-│   ├── main.tsx         # React entry point
-│   └── index.css        # Global styles
-├── 📂 tests             # Unit & integration tests
-│   ├── 📂 unit          # Unit-testing (vitest)
-│   └── 📂 e2e           # End-to-end tests (Cypress, Playwright)
-├── .eslintrc.cjs         # ESLint config
-├── .prettierrc           # Prettier config
-├── .gitignore            # Git ignore rules
-├── package.json          # Dependencies & scripts
+│   ├── 📂 assets        # Static assets like images, fonts, and global styles
+│   ├── 📂 components    # Reusable UI components (buttons, forms, etc.)
+│   ├── 📂 config        # Configuration files (e.g., API URLs, environment settings)
+│   ├── 📂 context       # React context for managing app-wide state (e.g., user authentication)
+│   ├── 📂 features      # Feature-specific logic (e.g., dashboard, user management)
+│   ├── 📂 hooks         # Custom React hooks (e.g., useAuth, useLocalStorage)
+│   │   ├── 📂 handlers  # Functions for handling specific operations (e.g., form submissions)
+│   │   ├── 📂 helpers   # Helper functions for common tasks (e.g., formatDate)
+│   │   ├── 📂 query     # Custom hooks for data fetching (e.g., useFetchData)
+│   │   ├── 📂 store     # Zustand or Redux stores for managing state
+│   │   └── 📂 utils     # Utility functions for various operations (e.g., logging, validation)
+│   ├── 📂 layouts       # Layout components for page structure (e.g., Header, Sidebar)
+│   ├── 📂 pages         # Full-page components (e.g., HomePage, LoginPage)
+│   ├── 📂 providers     # React context providers for app-wide state management
+│   ├── 📂 routes        # Routing setup using React Router (e.g., Routes configuration)
+│   ├── 📂 services      # API call functions (e.g., Axios or fetch API calls)
+│   ├── 📂 utils         # Helper functions for general-purpose use across the app
+│   │   └── 📂 Logger    # Logger utilities for debugging and monitoring
+│   ├── App.tsx          # Main React component that renders the app
+│   ├── main.tsx         # Entry point for React app initialization
+│   └── index.css        # Global styles (e.g., reset, typography)
+├── 📂 tests             # Test files (unit and integration tests)
+│   ├── 📂 unit          # Unit tests for individual functions/components (vitest)
+│   └── 📂 e2e           # End-to-end tests (e.g., Cypress or Playwright)
+├── .eslintrc.cjs         # ESLint configuration file
+├── .prettierrc           # Prettier configuration file
+├── .gitignore            # Git ignore rules to exclude unnecessary files
+├── package.json          # Project dependencies and npm scripts
 ├── tsconfig.json         # TypeScript configuration
-├── vite.config.ts        # Vite configuration
-└── README.md             # Project documentation
+├── vite.config.ts        # Vite configuration file for bundling and development server
+└── README.md             # Project documentation and instructions
 ```
 
 ---
