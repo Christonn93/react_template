@@ -1,6 +1,6 @@
 {
-  "name": "react_template",
-  "private": true,
+  "name": "@christonn93/react_template",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
