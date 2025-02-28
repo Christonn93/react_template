@@ -67,33 +67,41 @@ _A brief and clear description of your project._
 ```
 📦 project-root
 ├── 📂 public            # Static assets
-│   ├── favicon.ico
-│   ├── logo.png
-│   └── manifest.json
+│   ├── favicon.ico      # Favicon
+│   ├── logo.png         # Logo image
+│   └── manifest.json    # Web manifest
 ├── 📂 src
 │   ├── 📂 assets        # Images, fonts, styles
 │   ├── 📂 components    # Reusable UI components
+│   ├── 📂 config        # Business logic (auth, dashboard, etc.)
+│   ├── 📂 context       # Context providers (auth, dashboard, etc.)
 │   ├── 📂 features      # Business logic (auth, dashboard, etc.)
 │   ├── 📂 hooks         # Custom React hooks
+│   │   ├── 📂 handlers  # Unit-testing (vitest)
+│   │   ├── 📂 helpers   # Unit-testing (vitest)
+│   │   ├── 📂 query     # Unit-testing (vitest)
+│   │   ├── 📂 store     # Unit-testing (vitest)
+│   │   └── 📂 utils     # End-to-end tests (Cypress, Playwright)
 │   ├── 📂 layouts       # Page layouts
 │   ├── 📂 pages         # Full-page components
 │   ├── 📂 providers     # Context providers
-│   ├── 📂 redux         # Redux store (if used)
 │   ├── 📂 routes        # React Router setup
 │   ├── 📂 services      # API calls (Axios, fetch)
 │   ├── 📂 utils         # Helper functions
-│   ├── App.tsx         # Main application file
-│   ├── main.tsx        # React entry point
-│   └── index.css       # Global styles
+│   │   └── 📂 Logger    # End-to-end tests (Cypress, Playwright)
+│   ├── App.tsx          # Main application file
+│   ├── main.tsx         # React entry point
+│   └── index.css        # Global styles
 ├── 📂 tests             # Unit & integration tests
-├── 📂 e2e               # End-to-end tests (Cypress, Playwright)
-├── .eslintrc.cjs        # ESLint config
-├── .prettierrc          # Prettier config
-├── .gitignore           # Git ignore rules
-├── package.json         # Dependencies & scripts
-├── tsconfig.json        # TypeScript configuration
-├── vite.config.ts       # Vite configuration
-└── README.md            # Project documentation
+│   ├── 📂 unit          # Unit-testing (vitest)
+│   └── 📂 e2e           # End-to-end tests (Cypress, Playwright)
+├── .eslintrc.cjs         # ESLint config
+├── .prettierrc           # Prettier config
+├── .gitignore            # Git ignore rules
+├── package.json          # Dependencies & scripts
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.ts        # Vite configuration
+└── README.md             # Project documentation
 ```
 
 ---
